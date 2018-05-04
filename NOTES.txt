@@ -1,0 +1,4 @@
+- when you rename a directory make the php code rename that folder
+- when you delete a directory make the php code delete that folder with everything in it
+
+- when you are writing anything in the name box make it show you what the directory name will look like

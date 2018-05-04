@@ -1,0 +1,71 @@
+body { overflow-x: hidden; }
+.header {
+   padding:20px;
+   background:#4285f4;
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+}
+.header .col-sm-12 h1{
+   color: #fff;
+   font-size: 20px;
+}
+
+.box {
+   margin-top:30px;
+   width:90%;
+   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.6);
+}
+.list ul {
+   padding:0;
+}
+.list ul li {
+   text-align: left;
+   list-style-type: none;
+   border-bottom: 1px solid #ccc;
+}
+.list ul li:hover {
+   background: #f5f5f5;
+}
+
+.none {
+   padding:0px !important;
+   font-weight: bold;
+   background:#f5f5f5;
+}
+.first {
+   padding-left: 30px !important;
+}
+.last {
+   border-right: none !important;
+}
+.list ul li .col-sm-3 , .list ul li .col-sm-2 , .edit {
+   padding:15px;
+   border-right: 1px solid #ccc;
+   text-transform: capitalize;
+}
+
+img {
+   width:20px;
+   padding-top:17px;
+}
+
+.inputxt {
+   width: 100%;
+   border:1px solid #fff;
+}
+.inputxt:focus {
+   outline:none;
+   border-bottom: 1px solid #ccc;
+}
+
+#label { color: #fff; }
+.view {color: #8e8e8e !important; }
+
+#error {
+   color: #fff;
+   transition: color 300ms ease;
+}
+.error {
+   color: #FF5151 !important;
+   font-weight: bold;
+   transition: color 300ms ease;
+}
