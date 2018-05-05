@@ -69,3 +69,10 @@ img {
    font-weight: bold;
    transition: color 300ms ease;
 }
+
+
+/* Github link */
+.github-link {
+    margin-left: 60px;
+    font-weight: bold;
+}
