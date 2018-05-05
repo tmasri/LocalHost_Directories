@@ -7,8 +7,13 @@
    $id = $i->{'id'};
    $arr = array();
 
+   $check = mysqli_query($con, "SELECT * FROM main WHERE id=$id");
+   $get = mysqli_fetch_assoc($check);
+   $dir = $get['dir'];
+
    if (mysqli_query($con, "DELETE FROM main WHERE id=$id")) {
       $arr[0] = "yes";
+      rename('../'.$dir, '../delete-'.$id);
    } else {
       $arr[1] = "no";
    }

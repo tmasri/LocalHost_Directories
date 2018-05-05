@@ -12,6 +12,7 @@ function getList() {
    ul.appendChild(li);
 
    var val = "";
+   var dir = "";
 
    for (var x in pass) {
       val = pass[x];
@@ -37,7 +38,9 @@ function buildNode(name, dir, i) {
 
    // set their attributes
    col1.setAttribute("class", "col-sm-5 first");
+   col1.setAttribute("onclick","goTo('"+dir+"')");
    col2.setAttribute("class", "col-sm-5");
+   col2.setAttribute("onclick","goTo('"+dir+"')");
    col3.setAttribute("class", "col-sm-2 last edit");
 
    // give them text
@@ -131,4 +134,10 @@ function lastNode() {
 
    return li;
    
+}
+
+function goTo(link) {
+   
+   window.open(link);
+
 }

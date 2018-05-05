@@ -38,7 +38,8 @@ function doChecks(n, i) {
 function toDB(n) {
 	
 	var r = new XMLHttpRequest();
-	var url = "main/toDB.php?i=" + encodeURIComponent(JSON.stringify({"name": n}));
+    var url = "main/toDB.php?i=" + encodeURIComponent(JSON.stringify({"name": n}));
+    console.log(url);
 	r.open("GET", url, true);
 	r.setRequestHeader("Content-Type", "application/json");
 	r.onreadystatechange = function() {
