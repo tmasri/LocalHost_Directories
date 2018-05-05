@@ -16,7 +16,7 @@
 		$text .= "<style type=\"text/css\">\n";
 		$text .= "table td {\n";
 		$text .= "font-family: quicksand;";
-		$text .= "font-size:30px;";
+		$text .= "font-size:50px;";
 		$text .= "}";
 		$text .= "</style>\n";
 		$text .= "</head>\n";
@@ -59,6 +59,9 @@
 	if (mysqli_query($con, "INSERT INTO main VALUES('', '$name', '$dir')")) {
 		$arr[0] = "yes";
 		mkdir('../'.$dir);
+		mkdir('../'.$dir.'/css');
+		mkdir('../'.$dir.'/js');
+		mkdir('../'.$dir.'/pictures');
 		setup($dir, $name);
 	} else {
 		$arr[0] = "no";
