@@ -25,6 +25,8 @@ function buildInputNode(n) {
 
    col1.setAttribute("class", "col-sm-5 first");
    col2.setAttribute("class", "col-sm-5 last");
+   col2.setAttribute("style", "font-weight:normal;");
+   col2.setAttribute("id", "directory");
 
    if (n != "") input = createInput("name", n, 1);
    else input = createInput("name", "Name", 0);

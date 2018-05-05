@@ -8,10 +8,28 @@ function startListening(id, i, el) {
             doChecks(name, i);
          } else if(e.which == 27) {
             placeBoxes(id, el);
+         } else {
+             dir.innerHTML = "";
+             dir.html(toDir(name.val()));
          }
       });
       
    });
+}
+
+function toDir(n) {
+    
+    var dir = n.split(" ");
+     if (dir.length > 1) {
+         n = "";
+         console.log("here");
+         for (var i = 0; i < dir.length; i++) {
+            n += (i < dir.length-1 ? dir[i] + '_' : dir[i]);
+         }
+     }
+
+     return n;
+
 }
 
 function placeBoxes(i, e) {
